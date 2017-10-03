@@ -1,0 +1,12 @@
+package com.ef;
+
+public class Parser {
+
+	public static void main(String[] args) {
+//		String a="2";
+//		String b="3";
+//		// TODO Auto-generated method stub
+//		System.out.println("Product = "+Integer.parseInt(a)*Integer.parseInt(b));
+	}
+
+}

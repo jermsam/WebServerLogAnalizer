@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	 	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/parser</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">total</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+	<!-- Drop and re-create the database schema on startup otherwise use update-->
+	    <property name="hbm2ddl.auto">update</property>
+	<!-- Enable Hibernate's automatic session context management-->
+		<mapping class="jitpomi.inc.jbanker.model.Customers" />
+		<mapping class="jitpomi.inc.jbanker.model.Users" />
+		<mapping class="jitpomi.inc.jbanker.model.Borrowers" />
+		<mapping class="jitpomi.inc.jbanker.model.SavingsTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.AdminSavingsTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.IndSavingsTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.ConfigSavings" />
+		<mapping class="jitpomi.inc.jbanker.model.SharesTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.TreasuryStockTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.ConfigShares" />
+		<mapping class="jitpomi.inc.jbanker.model.Dividends" />
+		<mapping class="jitpomi.inc.jbanker.model.Loans" />
+		<mapping class="jitpomi.inc.jbanker.model.ApprovedLoans" />
+		<mapping class="jitpomi.inc.jbanker.model.DisbursedLoans" />
+		<mapping class="jitpomi.inc.jbanker.model.RejectedLoans" />
+		<mapping class="jitpomi.inc.jbanker.model.LoansTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.IndLoansTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.AdminLoansTxn" />
+		<mapping class="jitpomi.inc.jbanker.model.WrittenOffLoans" />
+		<mapping class="jitpomi.inc.jbanker.model.OtherAdminTxns" />
+		<mapping class="jitpomi.inc.jbanker.model.FurnitureAndFittings" />
+		<mapping class="jitpomi.inc.jbanker.model.Investment" />
+		<mapping class="jitpomi.inc.jbanker.model.BankingTxns" />
+
+
+		<mapping class="jitpomi.inc.jbanker.model.Stock" />
+		<mapping class="jitpomi.inc.jbanker.model.MembershipFee" />
+		<mapping class="jitpomi.inc.jbanker.model.ConfigLoans" />
+
+		<mapping class="jitpomi.inc.jbanker.model.OtherIncomes" />
+
+			<mapping class="jitpomi.inc.jbanker.model.LoanApplicationFee" />
+			<mapping class="jitpomi.inc.jbanker.model.SaleOfStationary" />
+			<mapping class="jitpomi.inc.jbanker.model.OtherExpenses" />
+
+			<mapping class="jitpomi.inc.jbanker.model.LoansPayable" />
+			<mapping class="jitpomi.inc.jbanker.model.LoansPayableTxn" />
+
+			<mapping class="jitpomi.inc.jbanker.model.AccountsPayable" />
+			<mapping class="jitpomi.inc.jbanker.model.AccountsPayableTxn" />
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,9 @@
+package com.ef;
+
+import java.util.Date;
+
+/**Java Class ~ a Blue print for each log*/
+public class LogEntry {
+	String ipAddress;
+	Date accessTime;
+}

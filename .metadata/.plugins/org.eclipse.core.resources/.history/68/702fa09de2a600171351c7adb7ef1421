@@ -1,0 +1,13 @@
+package com.ef;
+
+public class Parser {
+
+	public static void main(String[] args) {
+		LogAnalyser analiser= new LogAnalyser();
+		analiser.readFile("C:/USERS/JITPOMI/Desktop/log.txt");
+		analiser.printAll("2000-10-21.21:55:36","daily");
+//		System.out.println("Unique IPs: "+analiser.countUniqueIps("2000-10-22.21:55:36","daily"));
+		System.out.println(analiser.groupRecordsByIpAddress("2000-10-21.21:55:36","daily"));
+	}
+
+}

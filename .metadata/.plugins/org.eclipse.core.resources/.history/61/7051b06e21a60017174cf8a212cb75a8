@@ -1,0 +1,5 @@
+package com.ef;
+/**inhales log String exhales LogEntry object*/
+public class WebLogParse {
+
+}

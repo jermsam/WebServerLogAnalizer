@@ -1,0 +1,58 @@
+
+Ÿsquid:S1319B"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(˜‘ß¡ûÿÿÿÿHôRMINORZ
+CODE_SMELL
+dsquid:S1698U"9Use the "equals" method if value comparison was intended.(¢—®çûÿÿÿÿHïRMAJORZBUG
+s
+squid:S1060";Replace this usage of System.out or System.err by a logger.(¢âÚ±ıÿÿÿÿ8Ø§æí+HŸRMAJORZ
+CODE_SMELL
+šsquid:S1319="mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(óÊşÒHõRMINORZ
+CODE_SMELL
+•squid:S2681Y"oOnly the first line of this 2-line block will be executed conditionally. The rest will execute unconditionally.(¥¹ïHûRMAJORZBUG
+^squid:S1602)",Remove useless curly braces around statement(ÆÙö„şÿÿÿÿHÿRMINORZ
+CODE_SMELL
+šsquid:S13198"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÃÌ‚HóRMINORZ
+CODE_SMELL
+gsquid:S1854§";Remove this useless assignment to local variable "comment".(­¡ùÿÿÿÿHƒRMAJORZBUG
+m
+squid:S106Ï";Replace this usage of System.out or System.err by a logger.(ç¡–İşÿÿÿÿH RMAJORZ
+CODE_SMELL
+q
+squid:S128v"LEnd this switch case with an unconditional break, return or throw statement.(ßªå¢HñRMAJORZBUG
+t
+squid:S106Õ";Replace this usage of System.out or System.err by a logger.(ç¡–İşÿÿÿÿ8·¾‚èí+H³RMAJORZ
+CODE_SMELL
+h
+squid:S106Î";Replace this usage of System.out or System.err by a logger.(çëé¾H£RMAJORZ
+CODE_SMELL
+^squid:S1612G",Replace this lambda with a method reference.(óÅí¶üÿÿÿÿH€RMINORZ
+CODE_SMELL
+t
+squid:S106Ğ";Replace this usage of System.out or System.err by a logger.(Î†¥‡ıÿÿÿÿ8ó¶åí+H¢RMAJORZ
+CODE_SMELL
+t
+squid:S106Í";Replace this usage of System.out or System.err by a logger.(ëÿˆ®ùÿÿÿÿ8Éôƒçí+H§RMAJORZ
+CODE_SMELL
+t
+squid:S106Ñ";Replace this usage of System.out or System.err by a logger.(ç¡–İşÿÿÿÿ8Ÿúúæí+H¤RMAJORZ
+CODE_SMELL
+asquid:S1854v";Remove this useless assignment to local variable "comment".(ßªå¢H‚RMAJORZBUG
+Ksquid:S1166*"%Either log or rethrow this exception.(ï­£ÄHıRMAJORZBUG
+Qsquid:S1166Å"%Either log or rethrow this exception.(±Ÿ—±ÿÿÿÿÿHşRMAJORZBUG
+^squid:S1612G",Replace this lambda with a method reference.(óÅí¶üÿÿÿÿHRMINORZ
+CODE_SMELL
+o
+squid:S106Ò";Replace this usage of System.out or System.err by a logger.(’ì•ï8Ÿúúæí+H¥RMAJORZ
+CODE_SMELL
+¦squid:S1192Ï"iDefine a constant instead of duplicating this literal "________________________________________" 3 times.(ç¡–İşÿÿÿÿ8·¾‚èí+H²RCRITICALZ
+CODE_SMELL
+w
+squid:S128§"LEnd this switch case with an unconditional break, return or throw statement.(­¡ùÿÿÿÿHòRMAJORZBUG
+jsquid:S1479g"8Reduce the number of switch cases from 34 to at most 30.(¤ç¥ÛüÿÿÿÿHüRMAJORZ
+CODE_SMELL
+Tsquid:S1148Ç"#Use a logger to log this exception.(Ç’ÇêH…RMINORZVULNERABILITY
+dsquid:S1698W"9Use the "equals" method if value comparison was intended.(ÔÄå®øÿÿÿÿHğRMAJORZBUG
+Œsquid:S2293¹"YReplace the type specification in this constructor call with the diamond operator ("<>").(æÏ¿“ùÿÿÿÿHîRMINORZ
+CODE_SMELL
+™squid:S13193"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÏÒÅ:HöRMINORZ
+CODE_SMELL
+Xsquid:S1148+"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH„RMINORZVULNERABILITY

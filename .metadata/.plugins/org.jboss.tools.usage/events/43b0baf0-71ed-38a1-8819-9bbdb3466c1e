@@ -1,0 +1,11 @@
+#Mon Oct 02 10:54:24 EAT 2017
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1506930864174
+c=0
+cmp=usage
+a=finishWizard
+cl=org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddLibraryToBuildpathAction$1
+v=2.2.4
+s=1

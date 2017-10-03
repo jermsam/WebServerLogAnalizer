@@ -1,0 +1,46 @@
+
+lsquid:S1118":Add a private constructor to hide the implicit public one.(ãòÙÂøÿÿÿÿH‘RMAJORZ
+CODE_SMELL
+g
+squid:S106";Replace this usage of System.out or System.err by a logger.(ãŒÿ™HŠRMAJORZ
+CODE_SMELL
+g
+squid:S106";Replace this usage of System.out or System.err by a logger.(ä¾ùÊHRMAJORZ
+CODE_SMELL
+m
+squid:S106!";Replace this usage of System.out or System.err by a logger.(µ…¤8ôŞùéí+H´RMAJORZ
+CODE_SMELL
+l
+squid:S106";Replace this usage of System.out or System.err by a logger.(€Ô²¢ÿÿÿÿÿHŒRMAJORZ
+CODE_SMELL
+^squid:S16120",Replace this lambda with a method reference.(·×½ÒùÿÿÿÿH’RMINORZ
+CODE_SMELL
+l
+squid:S106 ";Replace this usage of System.out or System.err by a logger.(‡É¤ªúÿÿÿÿHRMAJORZ
+CODE_SMELL
+l
+squid:S106";Replace this usage of System.out or System.err by a logger.(÷ïœ„üÿÿÿÿHˆRMAJORZ
+CODE_SMELL
+n
+squid:S106#";Replace this usage of System.out or System.err by a logger.(­Âã‘8ôŞùéí+HµRMAJORZ
+CODE_SMELL
+g
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ÿ°ôäH‹RMAJORZ
+CODE_SMELL
+g
+squid:S106";Replace this usage of System.out or System.err by a logger.(ı´ÁÖHRMAJORZ
+CODE_SMELL
+g
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÓŞµĞHRMAJORZ
+CODE_SMELL
+Ÿsquid:S1319("mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(†áÇÿÿÿÿÿH†RMINORZ
+CODE_SMELL
+l
+squid:S106";Replace this usage of System.out or System.err by a logger.(–ÓØŠşÿÿÿÿH‡RMAJORZ
+CODE_SMELL
+l
+squid:S106";Replace this usage of System.out or System.err by a logger.(º…ïóşÿÿÿÿH‰RMAJORZ
+CODE_SMELL
+s
+squid:S1069";Replace this usage of System.out or System.err by a logger.(ï³Í—ûÿÿÿÿ8úûéí+H¶RMAJORZ
+CODE_SMELL

@@ -1,0 +1,25 @@
+package com.ef;
+
+import java.util.Date;
+
+/**Java Class ~ a Blue print for each log*/
+public class LogEntry {
+	//immutable ~private & no setter defnz
+	private String ipAddress;
+	private Date accessTime;
+	private int StatusCode;
+	public String getIpAddress() {
+		return ipAddress;
+	}
+	public Date getAccessTime() {
+		return accessTime;
+	}
+	public int getStatusCode() {
+		return StatusCode;
+	}
+	@Override
+	public String toString() {
+		return ipAddress+"|" + accessTime + "|" + accessTime + "|" + StatusCode ;
+	}
+	
+}

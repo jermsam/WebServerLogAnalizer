@@ -1,0 +1,21 @@
+package com.ef;
+
+import java.util.Map;
+import java.util.stream.Stream;
+
+public class Parser {
+
+	public static void main(String[] args) {
+		LogAnalyser analiser= new LogAnalyser();
+		analiser.readFile("C:/USERS/JITPOMI/Desktop/log.txt");
+		
+		analiser.mapIpAddressAgainstComment("2000-10-21.21:55:36","daily",1);
+		 String[] array = {"--startDate=2017-01-01.13:00:00", "--duration=hourly", "--threshold=100"};
+		Stream.of(array);
+		
+	}
+
+//	public Map<String,String> decodeArgs(String arg){
+//		return arg.split(" = ")[1];
+//	}
+}

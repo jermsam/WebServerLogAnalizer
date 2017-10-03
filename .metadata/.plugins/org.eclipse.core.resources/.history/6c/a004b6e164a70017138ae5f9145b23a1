@@ -1,0 +1,2 @@
+log47.rootLogger=OFF
+log4j.logger.org.hibernate=info

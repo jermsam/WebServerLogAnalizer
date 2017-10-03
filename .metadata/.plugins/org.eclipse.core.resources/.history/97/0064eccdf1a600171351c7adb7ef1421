@@ -1,0 +1,9 @@
+package com.ef;
+
+public class Parser {
+
+	public static void main(String[] args) {
+		new LogAnalyser().mapIpAddressAgainstComment("2000-10-21.21:55:36","daily",2);
+	}
+
+}

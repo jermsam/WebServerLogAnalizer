@@ -1,0 +1,39 @@
+package com.ef.data;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+public class HibernateUtil {
+
+	private static final SessionFactory sessionFactory = buildSessionFactory();
+
+	private static SessionFactory buildSessionFactory() {
+		try {
+			// Create the SessionFactory from hibernate.cfg.xml
+			return new Configuration().configure().buildSessionFactory();
+		} catch (Throwable ex) {
+			// Make sure you log the exception, as it might be swallowed
+			// Make sure you log the exception, as it might be swallowed
+			 Alert alert = new Alert(AlertType.ERROR);
+//		     alert.initOwner(dialogStage);
+		     alert.setTitle("Connection Failure");
+		     alert.setHeaderText("Database Connection failure");
+		     alert.setContentText("Perhaps you have not started the database server."
+		     		+ "\n Please ensure that the database is running and has jbanker database created");
+
+		     alert.showAndWait();
+		     System.exit(0);
+			throw new ExceptionInInitializerError(ex);
+		}
+	}
+
+	public static SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
+	public static void shutdown() {
+		// Close caches and connection pools
+		getSessionFactory().close();
+	}
+}

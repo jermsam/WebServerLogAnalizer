@@ -1,0 +1,43 @@
+package com.ef;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class LogAnalyser {
+private ArrayList<LogEntry> records;
+//initialize to an empty array list at object creation
+public LogAnalyser() {
+	super();
+	this.records = new ArrayList<>();
+}
+
+public void readFile(String filename){
+	/**Create File resource  for fileName 
+	 * iterate over its lines;
+	 * use WebLogParse for each to convert it to LogEntry objects
+	 * add resulting LogEntry to records list
+	 * try-with-resources to tame:
+	 * java.nio.file.FileSystemException: /proc: Too many open files
+	*/
+	try (Stream<String> lines = Files.lines(Paths.get(filename))) {//Stream created in an auto closable
+		lines.forEachOrdered(line->{records.add(WebLogParse.parseEntry(line));});
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+}
+
+public void printAll(){
+	records.stream().forEachOrdered(System.out::println);//iterate over each and print to console
+}
+public int countUniqueIps(){
+	ArrayList<String> uniqueIps =new ArrayList<>();
+	records.forEach(le->uniqueIps.stream().filter(ip->!uniqueIps.contains(ip)).collect(Collectors.toList()));
+	return records.size();
+}
+
+}

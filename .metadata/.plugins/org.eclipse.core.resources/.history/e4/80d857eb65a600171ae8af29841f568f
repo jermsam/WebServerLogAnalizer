@@ -1,0 +1,22 @@
+package com.ef;
+
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+/**inhales log String exhales LogEntry object*/
+public class WebLogParse {
+  private static final SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd.HH:mm:ss",Locale.US);
+public static Date parse(String dateStr){
+	ParsePosition pp=new ParsePosition(0);
+	return dateFormat.parse(dateStr, pp);
+}
+public static String matchTo(StringBuffer sb, String delimiter){
+	int x=sb.indexOf(delimiter);
+	if(x==-1){ x=sb.length();}
+	String ans=sb.substring(0,x);
+	sb.delete(0, x+delimiter.length());
+	return ans;
+}
+}

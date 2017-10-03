@@ -1,0 +1,20 @@
+package com.ef;
+
+import java.util.ArrayList;
+
+public class LogAnalyser {
+private ArrayList<LogEntry> records;
+//initialize to an empty array list at object creation
+public LogAnalyser() {
+	super();
+	this.records = new ArrayList<>();
+}
+
+public void readFile(String filename){
+	//Create FileResource for fileName
+	//itterate over its line;
+		//use WebLogParse for each to convert it to LogEntry objects
+		//add resulting LogEntry to records list
+}
+
+}

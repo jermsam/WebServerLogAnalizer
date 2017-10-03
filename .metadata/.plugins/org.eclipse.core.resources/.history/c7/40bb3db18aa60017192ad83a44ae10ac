@@ -1,0 +1,13 @@
+package com.ef;
+
+public class Parser {
+
+	public static void main(String[] args) {
+		
+		String line="127.0.0.1|-|waren|[2000-10-21.33:55:36 -0700]|\"GET /apache_pb.gif HTTP/1.0\"|200|2326";
+		LogAnalyser analiser= new LogAnalyser();
+		analiser.readFile("log.txt");
+		analiser.printAll();
+	}
+
+}
