@@ -52,22 +52,22 @@ In the console, change directory to where the parse.jar is and run it: E.g. in m
 
 The tool will find any IPs that made more than 100 requests starting from 2017-01-01.13:00:00 to 2017-01-01.14:00:00 (one hour) 
 and print them to console AND also load them to another MySQL table with comments on why it's blocked.
-
-	GIVEN THAT EACH user_block COMMENT has a Unique code and also Each Ip Address has a unique ID,
-	and Each Comment can apply to multiple Ips, 
-	where Each Ip is able to have more than one Comment,
+	~ GIVEN THAT EACH user_block COMMENT has a Unique code 
+	~ and also Each Ip Address has a unique ID,
+	~ and Each Comment can apply to multiple Ips, where Each Ip is able to have more than one Comment,
 
 I MODIFIED THE REQUIREMENT TO THE FOLLOWING:
-
-	separate tables for:
-		ip ; namely ipaddress with fields (ipAddress_id,address) ipAddress_id being the primary key and
-		comment; namely statuscomment with fields(statuscomment_code,comment) statuscomment_code being the primary key
-	the two tables impliment are many to many relationship through HIBERNATE ORM
+I made separate tables for:
+		~ ip ; namely ipaddress with fields (ipAddress_id,address) ipAddress_id being the primary key and
+		~ comment; namely statuscomment with fields(statuscomment_code,comment) statuscomment_code being the primary key
+the two tables impliment a many to many relationship through HIBERNATE ORM
 
 To Test The Tool:
-I run the following command from the console:
-java -cp "parser.jar" com.ef.Parser --startDate=2000-10-21.21:55:36 --duration=daily --threshold=1
-On the sample C:/log.txt file above.
+On the sample C:/log.txt file above, I run the following commands from the console:
+	
+	cd D:\WebServerLogAnalizer\parser\dist
+	java -cp "parser.jar" com.ef.Parser --startDate=2000-10-21.21:55:36 --duration=daily --threshold=1
+
 
 The tool was able to find any IPs that made more than 1 requests starting from 2000-10-21.21:55:36 to 2000-10-21.22:55:36 (24 hours) 
 and printed them to console.
