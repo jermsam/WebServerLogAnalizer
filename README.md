@@ -10,7 +10,7 @@ The goal is to write a parser in Java that parses web server access log file,
  loads the log to MySQL and checks if a given IP makes more than a certain number of requests for the given duration.
 
 (1) I have Create a java tool that can parse and load the given log file to MySQL:
-	its executable .jar file is located in dist directory
+	its executable .jar file is located in parser/dist directory
 
   The delimiter of the log file is pipe (|)
 
@@ -39,14 +39,14 @@ The goal is to write a parser in Java that parses web server access log file,
 
 
 
-(2) The tool takes "startDate", "duration" and "threshold" as command line arguments. 
-	
+(2) The tool takes "startDate", "duration" and "threshold" as command line arguments.
 	"startDate" is of "yyyy-MM-dd.HH:mm:ss" format, 
 	"duration" can take only "hourly", "daily" as inputs 
 	and "threshold" can be an integer.
 
-(3) This is how the tool works:
-
+(3) This is how the tool works: 
+In the console, change directory to where the parse.jar is and run it: E.g. in my case it's in D:/WebServerLogAnalizer/parser/dist. So in the console I type:
+	cd D:\WebServerLogAnalizer\parser\dist
 	java -cp "parser.jar" com.ef.Parser --startDate=2000-10-21.21:55:36 --duration=hourly --threshold=11
 
 The tool will find any IPs that made more than 100 requests starting from 2017-01-01.13:00:00 to 2017-01-01.14:00:00 (one hour) 
