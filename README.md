@@ -46,6 +46,7 @@ The goal is to write a parser in Java that parses web server access log file,
 
 (3) This is how the tool works: 
 In the console, change directory to where the parse.jar is and run it: E.g. in my case it's in D:/WebServerLogAnalizer/parser/dist. So in the console I type:
+
 	cd D:\WebServerLogAnalizer\parser\dist
 	java -cp "parser.jar" com.ef.Parser --startDate=2000-10-21.21:55:36 --duration=hourly --threshold=11
 
