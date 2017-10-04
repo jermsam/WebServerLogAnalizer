@@ -13,7 +13,6 @@ The goal is to write a parser in Java that parses web server access log file,
 	its executable .jar file is located in parser/dist directory
 
   The delimiter of the log file is pipe (|)
-
 	Below is the sample log.txt file read.
 	The webserver log file is to be droped in the C:/ directory
 	And Named log.txt.
@@ -60,7 +59,7 @@ I MODIFIED THE REQUIREMENT TO THE FOLLOWING:
 I made separate tables for:
 		~ ip ; namely ipaddress with fields (ipAddress_id,address) ipAddress_id being the primary key and
 		~ comment; namely statuscomment with fields(statuscomment_code,comment) statuscomment_code being the primary key
-the two tables impliment a many to many relationship through HIBERNATE ORM
+		~ the two tables impliment a many to many relationship through HIBERNATE ORM
 
 To Test The Tool:
 On the sample C:/log.txt file above, I run the following commands from the console:
