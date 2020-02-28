@@ -1,10 +1,10 @@
 # WebServerLogAnalizer
 
-/**A product of Samson Ssali. a.k.a jermsam. (Lead developer at Jitpomi.Inc).
+A product of Samson Ssali. a.k.a jermsam. (Lead developer at Jitpomi.Inc).
 * ~ illustrates use of advanced java8 functional programming techniques
 * ~ employs java object data persistence in relational database (MySql)
 * ~ and explores abit of SQL aggregate function implimentations
-*/
+
 ## Motivation and Objective
 The networking department for one of my clients explained that they were facing a challenge monitoring their servers. They were looking for a simple tool to help them log patterns and errors rapidly without the need to investigate and read every individual log file. Something that works like [Datadog](https://www.datadoghq.com)
 
