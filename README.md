@@ -67,6 +67,7 @@ $cfg['Servers'][$i]['password'] = 'total';
 Otherwise phpMyAdmin may give you the following error:
 ```
 Access denied for user 'user'@'localhost' (using password:YES)
+```
 (iii) create a mysql database; calling it "parser"
 ```CREATE DATABASE parser;```
 You could do this with phpMyAdmin
