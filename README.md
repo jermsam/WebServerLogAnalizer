@@ -9,7 +9,7 @@
 The goal is to write a parser in Java that parses web server access log file,
  loads the log to MySQL and checks if a given IP makes more than a certain number of requests for the given duration.
 
-(1) I have Create a java tool that can parse and load the given log file to MySQL:
+(1) I have Created a java tool that can parse and load the given log file to MySQL:
 	its executable .jar file is located in parser/dist directory
 
   The delimiter of the log file is pipe (|)
