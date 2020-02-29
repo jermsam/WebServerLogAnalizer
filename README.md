@@ -152,7 +152,7 @@ Hence realising the objective even in a more rhobust way than what way required.
 ## FOR PERFORMANCE REASONS:
 ~ Used java 8's [lambda expressions](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) (functional programming) for efficiency and minimal code
 
-~ Used [JPA](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html) with [Hibernate ORM] (https://hibernate.org/orm/) implementation for proper persisting of Java Object with relational SQL Objects and automatic database creation
+~ Used [JPA](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html) with [Hibernate ORM](https://hibernate.org/orm/) implementation for proper persisting of Java Object with relational SQL Objects and automatic database creation
 
 ~ I used [log4j Logger](https://logging.apache.org/log4j/2.x/) to manage Hibernet logs
 Also did some commenting... to give a clue about what's going on
