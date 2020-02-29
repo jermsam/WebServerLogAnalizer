@@ -158,7 +158,7 @@ Hence realising the objective even in a more rhobust way than what way required.
 Also did some commenting... to give a clue about what's going on
 
 
-## Additional SQL Exercise:
+## Additional SQL Exercise: (explores SQL aggregate function implimentations)
 
 
 (1) Write MySQL query to find IPs that mode more than a certain number of requests for a given time period.
