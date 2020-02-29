@@ -58,7 +58,7 @@ mysql -h localhost -u root
 ```
 (ii) Set the password for the root user to "total"
 ```
-SET PASSWORD FOR root@localhost = PASSWORD("total")
+SET PASSWORD FOR root@localhost = PASSWORD("total");
 ```
 Incase you intend to use phpMyAdmin, make sure to set the new password into phpmyadmin's `config.inc.php` and restart the Apache server
 ```
