@@ -81,12 +81,13 @@ git clone https://github.com/jermsam/WebServerLogAnalizer.git
 cd WebServerLogAnalizer/parser/dist
 java -cp "parser.jar" com.ef.Parser --startDate=2000-10-21.21:55:36 --duration=hourly --threshold=11
 ```
-This will create the following tables in the "parser" dtatbase
+This will create the following tables in the "parser" database
 
-`statuscomment` a storage for `statusComment_code`s for the different `comment`s
-`ipaddress` a storage for the respective ip `address`es and corresponding auto generated `ipAddress_id`s
-`ipaddresses_statuscomments` a join table that define how the status comments relate to the ip addresse through `statusComment_code` - `ipAddress_id` combinations
-`hibernate_sequence` a relationship automatically generated from our use of the hibernate orm
+. `statuscomment` a storage for `statusComment_code`s for the different `comment`s
+. `ipaddress` a storage for the respective ip `address`es and corresponding auto generated `ipAddress_id`s
+. `ipaddresses_statuscomments` a join table that define how the status comments relate to the ip addresse through `statusComment_code`
+. `ipAddress_id` combinations
+. `hibernate_sequence` a relationship automatically generated from our use of the hibernate orm
 
 The tool will also find any IPs that made more than 100 requests starting from 2017-01-01.13:00:00 to 2017-01-01.14:00:00 (one hour) as instructed in the above console command and print them to console showing the `BLOCKED IP` and corresponding `COMMENT FROM AGGREGATE LOGS`
 
